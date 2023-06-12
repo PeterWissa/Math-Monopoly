@@ -2271,7 +2271,7 @@ return false;
 p.pay(unmortgagePrice, 0);
 sq.mortgage = false;
 document.getElementById("mortgagebutton").value = "Mortgage for $" + mortgagePrice;
-document.getElementById("mortgagebutton").title = "Mortgage " + sq.name + " for $" + mortgagePrice + ".";
+document.getElementById("mortgagebutton").title = "Mortgage " + sq.name + " for $" + mortgagePrice + ".");
 
 addAlert(p.name + " unmortgaged " + sq.name + " for $" + unmortgagePrice + ".");
 updateOwned();
