@@ -2271,7 +2271,7 @@ return false;
 p.pay(unmortgagePrice, 0);
 sq.mortgage = false;
 document.getElementById("mortgagebutton").value = "Mortgage for $" + mortgagePrice;
-document.getElementById("mortgagebutton").title = "Mortgage " + sq.name + " for $" + mortgagePrice + ".");
+document.getElementById("mortgagebutton").title = "Mortgage " + sq.name + " for $" + mortgagePrice + ".";
 
 addAlert(p.name + " unmortgaged " + sq.name + " for $" + unmortgagePrice + ".");
 updateOwned();
@@ -2293,7 +2293,7 @@ document.getElementById("landed").innerHTML = "You landed on " + s.name + ".";
 s.landcount++;
 addAlert(p.name + " landed on " + s.name + ".");
 
-// Allow player to buy the property on which he landed.
+// Allow 30]player to buy the property on which he landed.
 if (s.price !== 0 && s.owner === 0) {
 
 if (!p.human) {
