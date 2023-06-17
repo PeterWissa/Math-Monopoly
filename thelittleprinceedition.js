@@ -114,41 +114,26 @@ square[39] = new Square("The Salesclerk", "$400", "#0000FF", 400, 10, 50, 200, 6
 var communityChestCards = [];
 var chanceCards = [];
 
-communityChestCards[0] = new Card("Get out of Jail, Free. This card may be kept until needed answer this to recive the card", function(p) { p.communityChestJailCard = true; updateOwned();});
+communityChestCards[0] = new Card("Get out of Jail, Free. This card may be kept until needed answer this to receive the card", function(p) { p.communityChestJailCard = true; updateOwned();});
 
-/*
-You have won second prize in a beauty contest. Collect $10.
-From sale of stock, you get $50.
-Income tax refund. Collect $20.
-Holiday fund matures. Receive $100.
-You inherit $100.
-Receive $25 consultancy fee
-Pay hospital fees of $100.
-Bank error in your favor. Collect $200.
-Pay school fees of $50.
-Doctor's fee. Pay $50.
-It is your birthday. Collect $10 from every player.
-Advance to \"GO\" (Collect $200).
-You are assessed for street repairs. $40 per house. $115 per hotel.
-Go to Jail. Go directly to Jail. Do not pass \"GO\". Do not collect $200.
-*/
 
-communityChestCards[1] = new Card("Q1: Translate the triangle ABC up 2 units. (coordinates A;2,3 B;8,7 C;4,8) answer correctly & Collect $10.", function() { addamount(10, 'Community Chest');});
 
-communityChestCards[2] = new Card("Q2: Translate the triangle ABC down 3 units. (coordinates A;2,3 B;4,8 C;8,7) answer correctly & you get $50.", function() { addamount(50, 'Community Chest');});
-communityChestCards[3] = new Card("Q3: Translate the triangle ABC up 1 unit. (coordinates A;-2,3 B;-4,8 C;-7,7) answer correctly & Collect $100.", function() { addamount(100, 'Community Chest');});
-communityChestCards[4] = new Card("Q4: Translate the triangle ABC left 1 unit. (coordinates A;2,3 B;2,10 C;6,9) Answer correctly & Collect $20.", function() { addamount(20, 'Community Chest');});
-communityChestCards[5] = new Card("Q5: Translate the triangle ABC up 3 units. (coordinates A;3,-4 B;5,-10 C;9,-8) Answer correctly & Receive $100.", function() { addamount(100, 'Community Chest');});
-communityChestCards[6] = new Card("Q6: Translate the triangle ABC right 4 units. (coordinates A;2,-7 B;4,0 C;8,-1) Answer correctly & recive $100.", function() { addamount(100, 'Community Chest');});
-communityChestCards[7] = new Card("Q7: Translate the triangle ABC up 2 units and right 3 units. (coordinates A;2,2 B;5,3 C;3,5) Answer correctly & Receive $25.", function() { addamount(25, 'Community Chest');});
-communityChestCards[8] = new Card("Q8: Translate the triangle ABC right 3 units. (coordinates A;-7,2 B;-4,2 C;-5,4) Answer correctly & pay a fees of $100.", function() { subtractamount(100, 'Community Chest');});
-communityChestCards[9] = new Card("Q9: Translate the triangle ABC up 4 units and down 2 units. (coordinates A;3,2 B;6,2 C;5,4) Answer correctly & Bank error in your favor. Collect $200.", function() { addamount(200, 'Community Chest');});
-communityChestCards[10] = new Card("Q10: Translate the triangle ABC right 5. (coordinates A;2,-5 B;5,-5 C;3,-7) Answer correctly & Pay school fees of $50.", function() { subtractamount(50, 'Community Chest');});
-communityChestCards[11] = new Card("Q11: On what year did George Washington pass away? please pay a fee of $50.", function() { subtractamount(50, 'Community Chest');});
-communityChestCards[12] = new Card("Q12: What is the avrage cost of hotdogs in NYC? Collect $10 from every player.", function() { collectfromeachplayer(10, 'Community Chest');});
-communityChestCards[13] = new Card("Q13: When was the statue of liberty built? Advance to \"GO\" (Collect $200).", function() { advance(0);});
-communityChestCards[14] = new Card("Q14: how many players can play monopoly? You are assessed for street repairs. $40 per house. $115 per hotel.", function() { streetrepairs(40, 115);});
-communityChestCards[15] = new Card("Q16: what are the first 6 digits of pi? Go to Jail. Go directly to Jail. Do not pass \"GO\". Do not collect $200.", function() { gotojail();});
+communityChestCards[0] = new Card('Get out of Jail, Free. This card may be kept until needed or sold.', function(p) { p.communityChestJailCard = true; updateOwned();});
+communityChestCards[1] = new Card('You have won second prize in a beauty contest. Collect $10. Quote from the book: “And now here is my secret, a very simple secret: It is only with the heart that one can see rightly; what is essential is invisible to the eye.”', function() { addamount(10, 'Community Chest');});
+communityChestCards[2] = new Card('From sale of stock, you get $50. Quote from the book: “All grown-ups were once children... but only few of them remember it.”', function() { addamount(50, 'Community Chest');});
+communityChestCards[3] = new Card('Life insurance matures. Collect $100. Quote from the book: “It is the time you have wasted for your rose that makes your rose so important.”', function() { addamount(100, 'Community Chest');});
+communityChestCards[4] = new Card('Income tax refund. Collect $20. Quote from the book: “The most beautiful things in the world cannot be seen or touched, they are felt with the heart.”', function() { addamount(20, 'Community Chest');});
+communityChestCards[5] = new Card('Holiday fund matures. Receive $100. Quote from the book: “You become responsible forever for what you’ve tamed. You’re responsible for your rose.”', function() { addamount(100, 'Community Chest');});
+communityChestCards[6] = new Card('You inherit $100. Quote from the book: “Grown-ups never understand anything by themselves, and it is tiresome for children to be always and forever explaining things to them”', function() { addamount(100, 'Community Chest');});
+communityChestCards[7] = new Card('Receive $25 consultancy fee. Quote from the book: “Well, I must endure the presence of a few caterpillars if I wish to become acquainted with the butterflies.”', function() { addamount(25, 'Community Chest');});
+communityChestCards[8] = new Card('Pay hospital fees of $100. Quote from the book: “It is such a mysterious place, the land of tears.”', function() { subtractamount(100, 'Community Chest');});
+communityChestCards[9] = new Card('Bank error in your favor. Collect $200. Quote from the book: “You see, one loves the sunset when one is so sad.”', function() { addamount(200, 'Community Chest');});
+communityChestCards[10] = new Card('Pay school fees of $50. Quote from the book: “If you love a flower that lives on a star, it is sweet to look at the sky at night. All the stars are a-bloom with flowers...”', function() { subtractamount(50, 'Community Chest');});
+communityChestCards[11] = new Card('Doctor\'s fee. Pay $50. Quote from the book: “You\'re beautiful, but you\'re empty. No one could die for you.”', function() { subtractamount(50, 'Community Chest');});
+communityChestCards[12] = new Card('It is your birthday. Collect $10 from every player. Quote from the book: “I remembered the fox. One runs the risk of crying a bit if one allows oneself to be tamed.”', function() { collectfromeachplayer(10, 'Community Chest');});
+communityChestCards[13] = new Card('Advance to \"GO\" (Collect $200). Quote from the book: “A rock pile ceases to be a rock pile the moment a single man contemplates it, bearing within him the image of a cathedral.”', function() { advance(0);});
+communityChestCards[14] = new Card('You are assessed for street repairs. $40 per house. $115 per hotel. Quote from the book: “I did not know how to reach him, how to catch up with him... The land of tears is so mysterious.”', function() { streetrepairs(40, 115);});
+communityChestCards[15] = new Card('Go to Jail. Go directly to Jail. Do not pass \"GO\". Do not collect $200. Quote from the book: “I have lived a great deal among grown-ups. I have seen them intimately, close at hand. And that hasn’t much improved my opinion of them.”', function() { gotojail();});
 
 
 chanceCards[1] = new Card("Make General Repairs on All Your Property. For each house pay $25. For each hotel $100.", function() { streetrepairs(25, 100);});
