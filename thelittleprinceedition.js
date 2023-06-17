@@ -35,7 +35,7 @@ this.text = text;
 this.action = action;
 }   
 function corrections() {
-document.getElementById("cell1name").textContent = "Mediter-ranean Avenue";
+document.getElementById("cell1name").textContent = "The Pilot's Avenue";
 
 // Add images to enlarges.
 document.getElementById("enlarge5token").innerHTML += '<img src="images/train_icon.png" height="60" width="65" alt="" style="position: relative; bottom: 20px;" />';
@@ -73,7 +73,7 @@ var square = [];
 square[0] = new Square("GO", "COLLECT $200 SALARY AS YOU PASS.", "#FFFFFF");
 square[1] = new Square("The Pilot's Avenue", "$60", "#8B4513", 60, 3, 2, 10, 30, 90, 160, 250);
 square[2] = new Square("Community Chest", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[3] = new Square("The Prince's Avenue", "$60", "#8B4513", 60, 3, 4, 20, 60, 180, 320, 450);
+square[3] = new Square("The Little Prince's Avenue", "$60", "#8B4513", 60, 3, 4, 20, 60, 180, 320, 450);
 square[4] = new Square("City Tax", "Pay $200", "#FFFFFF");
 square[5] = new Square("South Sahara Railroad", "$200", "#FFFFFF", 200, 1);
 square[6] = new Square("Fox Avenue", "$100", "#87CEEB", 100, 4, 6, 30, 90, 270, 400, 550);
@@ -90,27 +90,27 @@ square[16] = new Square("Antoine de Saint-Exupéry's library", "$180", "#FFA500"
 square[17] = new Square("Community Chest", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
 square[18] = new Square("Antoine de Saint-Exupéry's books", "$180", "#FFA500", 180, 6, 14, 70, 200, 550, 750, 950);
 square[19] = new Square("Antoine de Saint-Exupéry's home", "$200", "#FFA500", 200, 6, 16, 80, 220, 600, 800, 1000);
-//square[20] = new Square("Free Parking", "", "#FFFFFF");
-square[20] =  new Square("no parking, GO TO JAIL", "Go directly to Jail. Do not pass GO. Do not collect $200.", "#FFFFFF");
-square[21] = new Square("f", "$220", "#FF0000", 220, 7, 18, 90, 250, 700, 875, 1050);
+square[20] = new Square("Free Parking", "", "#FFFFFF");
+//square[20] =  new Square("no parking, GO TO JAIL", "Go directly to Jail. Do not pass GO. Do not collect $200.", "#FFFFFF");
+square[21] = new Square("The King", "$220", "#FF0000", 220, 7, 18, 90, 250, 700, 875, 1050);
 square[22] = new Square("Chance", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[23] = new Square("Indiana Avenue", "$220", "#FF0000", 220, 7, 18, 90, 250, 700, 875, 1050);
-square[24] = new Square("Illinois Avenue", "$240", "#FF0000", 240, 7, 20, 100, 300, 750, 925, 1100);
+square[23] = new Square("The King's Robe", "$220", "#FF0000", 220, 7, 18, 90, 250, 700, 875, 1050);
+square[24] = new Square("The King's planet", "$240", "#FF0000", 240, 7, 20, 100, 300, 750, 925, 1100);
 square[25] = new Square("North Sahara Railroad", "$200", "#FFFFFF", 200, 1);
-square[26] = new Square("Atlantic Avenue", "$260", "#FFFF00", 260, 8, 22, 110, 330, 800, 975, 1150);
-square[27] = new Square("Ventnor Avenue", "$260", "#FFFF00", 260, 8, 22, 110, 330, 800, 975, 1150);
+square[26] = new Square("The Baobabs Tree", "$260", "#FFFF00", 260, 8, 22, 110, 330, 800, 975, 1150);
+square[27] = new Square("The Baobabs' Big Roots", "$260", "#FFFF00", 260, 8, 22, 110, 330, 800, 975, 1150);
 square[28] = new Square("Water Works", "$150", "#FFFFFF", 150, 2);
-square[29] = new Square("Marvin Gardens", "$280", "#FFFF00", 280, 8, 24, 120, 360, 850, 1025, 1200);
+square[29] = new Square("The Baobabs' Small Roots", "$280", "#FFFF00", 280, 8, 24, 120, 360, 850, 1025, 1200);
 square[30] = new Square("Go to Jail", "Go directly to Jail. Do not pass GO. Do not collect $200.", "#FFFFFF");
-square[31] = new Square("Pacific Avenue", "$300", "#008000", 300, 9, 26, 130, 390, 900, 1100, 1275);
-square[32] = new Square("North Carolina Avenue", "$300", "#008000", 300, 9, 26, 130, 390, 900, 1100, 1275);
+square[31] = new Square("The Lamplighter", "$300", "#008000", 300, 9, 26, 130, 390, 900, 1100, 1275);
+square[32] = new Square("The Lamplighter's Planet", "$300", "#008000", 300, 9, 26, 130, 390, 900, 1100, 1275);
 square[33] = new Square("Community Chest", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[34] = new Square("Pennsylvania Avenue", "$320", "#008000", 320, 9, 28, 150, 450, 1000, 1200, 1400);
+square[34] = new Square("The Lamplighter's Lamppost", "$320", "#008000", 320, 9, 28, 150, 450, 1000, 1200, 1400);
 square[35] = new Square("East Sahara RailRoad", "$200", "#FFFFFF", 200, 1);
 square[36] = new Square("Chance", "FOLLOW INSTRUCTIONS ON TOP CARD", "#FFFFFF");
-square[37] = new Square("Park Place", "$350", "#0000FF", 350, 10, 35, 175, 500, 1100, 1300, 1500);
+square[37] = new Square("The Salesclerk's Pill", "$350", "#0000FF", 350, 10, 35, 175, 500, 1100, 1300, 1500);
 square[38] = new Square("LUXURY TAX", "Pay $100", "#FFFFFF");
-square[39] = new Square("Boardwalk", "$400", "#0000FF", 400, 10, 50, 200, 600, 1400, 1700, 2000);
+square[39] = new Square("The Salesclerk", "$400", "#0000FF", 400, 10, 50, 200, 600, 1400, 1700, 2000);
 var communityChestCards = [];
 var chanceCards = [];
 
