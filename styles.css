@@ -277,8 +277,6 @@ br{
 
   .myworkStyle {
 
-
-
     background: linear-gradient(to right, black,red);
     -webkit-overflow-Y: hidden;
     -moz-overflow-Y: hidden;
@@ -298,82 +296,6 @@ br{
     background-repeat: no-repeat;
   }
   
-
-  
-
-
-  .myworkTitle {
-    
-    font-size: 4em; /*2em = 32px*/
-    color: fff; /*white*/
-    font-weight: bolder;
-  }
-
-
-
-
-
-  
-  .myWork1 {
-    margin: 0;
-    padding: 0 10;
-      float: left;
-      font-size: 3em; /* 25px = 1.5625em*/
-      color: fff; /*white*/
-  text-decoration:wavy;
-  text-shadow: #fff;
-  font-weight:bold;
-  position:absolute;
-  }
-
-  .myWork1-5 {
-    padding: 0 10;
-      float: left;
-      font-size: 1.70em; /*1.25em = 20px*/
-      color: #fff; /*white*/
-line-height: 50px;
-    }
-
-  .myWork2 {
-    text-decoration:wavy;
-    text-shadow: fff;
-    font-weight: bold;
-    
-  
-    margin: 0 10;
-    padding: 0;
-    float: right;
-    font-size: 3em; /* 25px = 1.5625em*/
-    color: #fff; /*white*/
-}
-
-  
-.myWork2-5 {
-    line-height: 50px;
-    padding: 0 10;
-    float: right;
-    font-size: 1.70em; /*1.25em = 20px*/
-    color: #fff; /*white*/
-    text-align: left;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
